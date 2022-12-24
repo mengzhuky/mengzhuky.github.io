@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<style>
+			img{
+				width: 500px;
+				height: 500px;
+			}
+			div{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		</style>
+		<script>
+			function first(){
+				alert("OMG");
+			}
+			function change(){
+				var a=document.getElementById("demo");
+				alert(a.value);
+			}
+		</script>
+	</head>
+	<body onload="first()">
+		<div>
+			<img src="./1.png">
+			<p></p>
+			<label>
+				<input type="text" onchange="change()" id="demo" onblur="change()">
+			</label>
+		</div>
+	</body>
+</html>

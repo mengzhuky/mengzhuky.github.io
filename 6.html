@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<style>
+  .demode{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);    position:relative;
+	animation:demo 5s infinite;
+
+  }
+  @keyframes demo
+{
+	0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(300px);
+    border: 3px solid black;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);  }
+  50% {
+    transform: translate(300px, 300px);
+    border: 3px solid black;
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);  }
+  75% {
+    transform: translate(0px, 300px);
+    border: 3px solid black;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+</style>
+<body>
+  <div class="demode">
+
+  </div>
+</body>
+</html>
